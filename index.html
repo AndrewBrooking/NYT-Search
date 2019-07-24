@@ -16,6 +16,9 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
 
+    <!-- Bootswatch Flatly -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
     <!-- Local CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
 
@@ -26,19 +29,18 @@
     <div class="container w-75 mx-auto">
 
         <!-- Banner -->
-        <div class="jumbotron text-center text-white">
+        <div class="jumbotron bg-primary text-center text-white">
             <span class="h2 font-weight-bold">
-                <i class="far fa-newspaper"></i>
-                New York Times Search
+                <i class="far fa-newspaper pr-1"></i>New York Times Search
             </span>
         </div>
 
         <!-- Form -->
         <div class="card">
-            <div class="card-header font-weight-bold">
-                <i class="far fa-window-maximize"></i>
-                Search Parameters
+            <div class="card-header bg-secondary font-weight-bold text-white">
+                <i class="far fa-window-maximize pr-1"></i> Search Parameters
             </div>
+
             <div class="card-body pb-1">
                 <form>
                     <!-- Search term -->
@@ -78,13 +80,13 @@
 
                     <div class="form-group">
                         <!-- Search button -->
-                        <button class="btn" id="search-btn">
+                        <button class="btn btn-info" id="search-btn">
                             <i class="fas fa-search"></i>
                             Search
                         </button>
 
                         <!-- Clear button -->
-                        <button class="btn" id="clear-btn">
+                        <button class="btn btn-primary" id="clear-btn">
                             <i class="far fa-trash-alt"></i>
                             Clear Results
                         </button>
@@ -95,9 +97,8 @@
 
         <!-- Results -->
         <div class="card mt-3">
-            <div class="card-header font-weight-bold">
-                <i class="fas fa-table"></i>
-                Top Articles
+            <div class="card-header bg-secondary font-weight-bold text-white">
+                <i class="fas fa-table pr-1"></i> Top Articles
             </div>
             <div id="results" class="card-body"></div>
         </div>
